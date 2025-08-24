@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.outfit{
+  font-family: "Outfit", sans-serif;
+  }
+</style>
+    
+</head>
+<body class=" max-w-[450px] bg-[rgba(244,245,247,1)] flex flex-col justify-center items-center h-[100vh] mx-auto "  >
+    <div class="image bg-[url('assets/bg.png')] w-[316px]  h-[132px] flex justify-center items-center">
+       <img src="assets/Group.png" alt=""> 
+    </div>
+    <form class="flex flex-col w-[89.33%] h-[34.1%] justify-center items-center bg-white gap-2.5 ">
+        <div class="flex flex-col w-[84.6%] aspect-[338/84] gap-2.5" >
+            <label class="outfit font-medium text-[1rem]" for="mobileNumber">Mobile Number</label>
+            <input class="w-full aspect-[338/52] bg-[rgba(244,245,247,1)] rounded-4xl border-none p-5 outfit font-light text-[1rem]" placeholder="Enter your number" id="mobile-number" type="text" name="mobileNumber" >
+        </div>
+        <div class=" flex flex-col w-[84.3%] aspect-[338/84] gap-2.5">
+            <label class="outfit font-medium text-[1rem]" for="pin">4 Digit pin</label>
+            <input class="w-full aspect-[338/52] bg-[rgba(244,245,247,1)] rounded-4xl border-none p-5 outfit font-light text-[1rem]"  placeholder="Enter 4 digit pin" type="text" name="pin" id="pin">
+        </div>
+        <button class=" w-[84.6%] aspect-[338/53] mt-1.5 bg-[rgba(8,116,242,1)] text-white rounded-4xl" id="login-btn">Login</button>
+    </form>
+    <script>
+        document.getElementById('login-btn').addEventListener('click',function(e){
+            e.preventDefault();
+            setMobileNumber = '01712345678';
+            setPin = '0201'
+            const mobileNumber = document.getElementById('mobile-number').value;
+            const pin = document.getElementById('pin').value;
+            
+            if( setMobileNumber === mobileNumber && setPin === pin){
+                window.location.href = "./home.html"
+            }
+
+            
+        })
+    </script>
+    <script src="login.js"></script>
+</body>
+</html>
