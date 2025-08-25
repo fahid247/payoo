@@ -1,11 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>it, home page</h1>
-</body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+      .outfit {
+        font-family: "Outfit", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[rgba(244,245,247,1)] min-h-[100vh]">
+    <header class="bg-white rounded-b-3xl pb-6">
+      <nav
+        class="flex justify-between items-center max-w-[450px] h-[84px] mx-auto p-5 border-b border-[rgba(8,8,8,0.1)]"
+      >
+        <div class="left flex">
+          <img class="max-w-[45px] h-[42px]" src="assets/Group.png" alt="" />
+          <div class="text">
+            <h1 class="outfit font-extrabold text-lg">$<span id="balance">45000</span></h1>
+            <p class="outfit font-normal text-[rgba(8,8,8,0.5)] text-sm">
+              Balance Available
+            </p>
+          </div>
+        </div>
+        <button
+          class="flex justify-center items-center cursor-pointer border-[rgba(8,8,8,0.1)] border-[1px] w-[102px] h-[38px] rounded-lg outfit font-normal text-[rgba(8,8,8,0.5)] text-sm" id="log-out-btn"
+        >
+          <img
+            class="max-w-[20px] h-[20px] mr-0.5"
+            src="assets/icons8-logout-48.png"
+            alt="" 
+          />
+          Log Out
+        </button>
+      </nav>
+
+      <main class="mx-auto max-w-[402px] mt-8">
+        <div class="welcome mb-6">
+          <h1 class="outfit font-bold text-2xl">🔥 Welcome to Payooo!</h1>
+          <p class="outfit font-normal text-[1rem] text-[rgba(8,8,8,0.5)] mt-3">
+            Enjoy easy and convenient financial services with us. Cashout charge
+            is low and
+          </p>
+        </div>
+        <div class="cards max-w-[402px] h-[197px] grid grid-cols-3 gap-4">
+          <div
+            class="card1 cursor-pointer max-w-[130px] h-[90px] rounded-[12px] border border-[rgba(8,8,8,0.1)] flex flex-col justify-center items-center"
+          >
+            <img class="w-6 h-6" src="assets/wallet1.png" alt="" />
+            <h1 class="text-[rgba(8,8,8,0.7)] outfit font-normal text-sm">
+              Add Money
+            </h1>
+          </div>
+          <div
+            class="card2 cursor-pointer max-w-[130px] h-[90px] rounded-[12px] border border-[rgba(8,8,8,0.1)] flex flex-col justify-center items-center"
+          >
+            <img class="w-6 h-6" src="assets/send1.png" alt="" />
+            <h1 class="text-[rgba(8,8,8,0.7)] outfit font-normal text-sm">
+              Cash Out
+            </h1>
+          </div>
+          <div
+            class="card3 cursor-pointer max-w-[130px] h-[90px] rounded-[12px] border border-[rgba(8,8,8,0.1)] flex flex-col justify-center items-center"
+          >
+            <img class="w-6 h-6" src="assets/money1.png" alt="" />
+            <h1 class="text-[rgba(8,8,8,0.7)] outfit font-normal text-sm">
+              Transfer Money
+            </h1>
+          </div>
+          <div
+            class="card4 cursor-pointer max-w-[130px] h-[90px] rounded-[12px] border border-[rgba(8,8,8,0.1)] flex flex-col justify-center items-center"
+          >
+            <img class="w-6 h-6" src="assets/bonus1.png" alt="" />
+            <h1 class="text-[rgba(8,8,8,0.7)] outfit font-normal text-sm">
+              Get Bonus
+            </h1>
+          </div>
+          <div
+            class="card5 cursor-pointer max-w-[130px] h-[90px] rounded-[12px] border border-[rgba(8,8,8,0.1)] flex flex-col justify-center items-center"
+          >
+            <img class="w-6 h-6" src="assets/purse1.png" alt="" />
+            <h1 class="text-[rgba(8,8,8,0.7)] outfit font-normal text-sm">
+              Pay Bill
+            </h1>
+          </div>
+          <div
+            class="card6 cursor-pointer max-w-[130px] h-[90px] rounded-[12px] border border-[rgba(8,8,8,0.1)] flex flex-col justify-center items-center"
+          >
+            <img class="w-6 h-6" src="assets/transaction1.png" alt="" />
+            <h1 class="text-[rgba(8,8,8,0.7)] outfit font-normal text-sm">
+              Transictions
+            </h1>
+          </div>
+        </div>
+      </main>
+    </header>
+    <div class="form max-w-[402px] mx-auto h-[540px]">
+      <h1 class="outfit font-semibold text-lg text-[rgba(8,8,8,0.9)] mb-4 mt-8">
+        Add Money
+      </h1>
+      <div
+        class="bg-white flex justify-center items-center w-[100%] h-[501px] rounded-3xl"
+      >
+        <form class="w-[88.5%] flex flex-col gap-4">
+          <div class="input1 w-[100%] flex flex-col">
+            <label
+              class="outfit font-medium text-[1rem] text-[rgba(8,8,8,0.7)]"
+              for="bank"
+              >Select a Bank</label
+            >
+            <select
+              class="w-[99%] h-[52px] mt-3 bg-[rgba(244,245,247,1)] rounded-4xl border-none text-[rgba(8,8,8,0.5)] pl-5 outfit font-light text-[1rem]"
+              name="bank"
+              id="bank"
+            >
+              <option value="">USB Bank</option>
+              <option value="">Islamic Bank</option>
+              <option value="">Brac Bank</option>
+              <option value="">Sonali Bank</option>
+            </select>
+          </div>
+          <div class="input2 flex flex-col">
+            <label
+              class="outfit font-medium text-[1rem] text-[rgba(8,8,8,0.7)]"
+              for="bankAccountNumber"
+              >Bank Account Number</label
+            >
+            <input
+              class="h-[52px] mt-3 bg-[rgba(244,245,247,1)] rounded-4xl border-none p-5 outfit font-light text-[1rem]"
+              placeholder="Enter 11 digit account number"
+              type="text"
+              id="bankAccountNumber"
+            />
+          </div>
+          <div class="input3 flex flex-col">
+            <label
+              class="outfit font-medium text-[1rem] text-[rgba(8,8,8,0.7)]"
+              for="amountAdd"
+              >Amount to Add
+            </label>
+            <input
+              class="h-[52px] mt-3 bg-[rgba(244,245,247,1)] rounded-4xl border-none p-5 outfit font-light text-[1rem]"
+              placeholder="Add Amount to Wallet"
+              type="number"
+              id="amountAdd"
+            />
+          </div>
+          <div class="input4 flex flex-col">
+            <label
+              class="outfit font-medium text-[1rem] text-[rgba(8,8,8,0.7)]"
+              for="pinNumber"
+              >Pin Number</label
+            >
+            <input
+              class="h-[52px] mt-3 bg-[rgba(244,245,247,1)] rounded-4xl border-none p-5 outfit font-light text-[1rem]"
+              placeholder="Enter 4 digit pin"
+              type="text"
+              id="pinNumber"
+            />
+          </div>
+          <button
+            class="w-[99%] cursor-pointer h-[53px] mt-1.5 bg-[rgba(8,116,242,1)] text-white rounded-4xl font-semibold text-xl outfit" id="add-money-btn"
+          >
+            Add Money
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="mt-32 h-1 w-8"></div>
+    <script src="home.js"></script>
+  </body>
 </html>
