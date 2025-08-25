@@ -15,20 +15,20 @@
 </style>
     
 </head>
-<body class=" bg-[rgba(244,245,247,1)] flex flex-col justify-center items-center h-[100vh] mx-auto "  >
-    <div class="image bg-[url('assets/bg.png')] w-[316px]  h-[132px] flex justify-center items-center">
-       <img src="assets/Group.png" alt=""> 
+<body class=" bg-[rgba(244,245,247,1)] flex flex-col justify-center items-center h-[99vh] mx-auto "  >
+    <div class="image bg-[url('assets/bg.png')] max-[400px]:w-64 w-[316px] max-[400px]:h-[105px] h-[132px] flex justify-center items-center bg-cover">
+       <img class=" max-[400px]:w-[70px] max-[400px]:h-[68px] max-[400px]:" src="assets/Group.png" alt=""> 
     </div>
-    <form class="flex flex-col max-w-[402px] h-[317px] justify-center items-center bg-white gap-2.5 p-5 ">
-        <div class="flex flex-col w-[338px] h-[84px] gap-2.5" >
+    <form class="flex flex-col max-[400px]:w-[322px] max-[400px]:h-[265px] w-[402px] h-[317px] justify-center items-center bg-white gap-5 p-5 ">
+        <div class="flex flex-col max-[400px]:w-[265px] max-[400px]:h-[64px] w-[338px] h-[84px] gap-2.5" >
             <label class="outfit font-medium text-[1rem]" for="mobileNumber">Mobile Number</label>
-            <input class="w-[338px] h-[52px] bg-[rgba(244,245,247,1)] rounded-4xl border-none p-5 outfit font-light text-[1rem]" placeholder="Enter your number" id="mobile-number" type="text" name="mobileNumber" >
+            <input class="max-[400px]:w-[265px] max-[400px]:h-[44px] w-[338px] h-[52px] bg-[rgba(244,245,247,1)] rounded-4xl border-none p-5 outfit font-light text-[1rem]" placeholder="Enter your number" id="mobile-number" type="text" name="mobileNumber" >
         </div>
-        <div class=" flex flex-col w-[338px] h-[84px] gap-2.5">
+        <div class=" flex flex-col max-[400px]:w-[265px] max-[400px]:h-[64px] w-[338px] h-[84px] gap-2.5">
             <label class="outfit font-medium text-[1rem]" for="pin">4 Digit pin</label>
-            <input class="w-[338px] h-[52px] bg-[rgba(244,245,247,1)] rounded-4xl border-none p-5 outfit font-light text-[1rem]"  placeholder="Enter 4 digit pin" type="text" name="pin" id="pin">
+            <input class="max-[400px]:w-[265px] max-[400px]:h-[44px] w-[338px] h-[52px] bg-[rgba(244,245,247,1)] rounded-4xl border-none p-5 outfit font-light text-[1rem]"  placeholder="Enter 4 digit pin" type="text" name="pin" id="pin">
         </div>
-        <button class=" w-[338px] cursor-pointer h-[53px] mt-1.5 bg-[rgba(8,116,242,1)] text-white rounded-4xl" id="login-btn">Login</button>
+        <button class="max-[400px]:w-[265px] max-[400px]:h-[49px] w-[338px] cursor-pointer h-[53px] max-[400px]:mt-4 bg-[rgba(8,116,242,1)] text-white rounded-4xl" id="login-btn">Login</button>
     </form>
     <script src="login.js"></script>
 </body>
