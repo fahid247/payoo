@@ -21,5 +21,72 @@ document.getElementById('add-money-btn').addEventListener('click',function(e){
 })
 document.getElementById('log-out-btn').addEventListener('click',function(){
     window.location.href = "./index.html"
-    console.log('button-clicked');
+})
+
+
+document.getElementById('withdraw-money-btn').addEventListener('click',function(e){
+    e.preventDefault();
+    const pinNumber = 1234;
+    const balance =parseInt(document.getElementById('balance').innerText);
+    const amountToReduce = parseInt(document.getElementById('amount').value);
+    const agentNumber = document.getElementById('agentNumber').value;
+    const pinValue = parseInt(document.getElementById('pinNumber2').value);
+    if(agentNumber.length !== 11){
+        alert('Enter valid account number');
+        return;
+    }
+    console.log(pinValue,pinNumber);
+    if(pinValue !== pinNumber){
+        alert('Wrong pin number');
+        return;
+    }
+    const newBalance = balance - amountToReduce;
+    document.getElementById('balance').innerText = newBalance;
+    document.getElementById('amount').value = '';
+    document.getElementById('pinNumber2').value = '';
+})
+
+
+document.getElementById('send-money-btn').addEventListener('click',function(e){
+    e.preventDefault();
+    const pinNumber = 1234;
+    const balance =parseInt(document.getElementById('balance').innerText);
+    const amountToReduce = parseInt(document.getElementById('amount2').value);
+    const agentNumber = document.getElementById('userAccountNumber').value;
+    const pinValue = parseInt(document.getElementById('pinNumber3').value);
+    if(agentNumber.length !== 11){
+        alert('Enter valid account number');
+        return;
+    }
+    console.log(pinValue,pinNumber);
+    if(pinValue !== pinNumber){
+        alert('Wrong pin number');
+        return;
+    }
+    const newBalance = balance - amountToReduce;
+    document.getElementById('balance').innerText = newBalance;
+    document.getElementById('amount2').value = '';
+    document.getElementById('pinNumber3').value = '';
+})
+
+
+
+
+
+
+
+document.querySelector('.cash-Out').addEventListener('click' , function(){
+    document.querySelector('.cashOut').classList.remove('hidden');
+    document.querySelector('.form').classList.add('hidden');
+    document.querySelector('.Transfer').classList.add('hidden');
+})
+document.querySelector('.add-money').addEventListener('click' , function(){
+    document.querySelector('.form').classList.remove('hidden');
+    document.querySelector('.cashOut').classList.add('hidden')
+    document.querySelector('.Transfer').classList.add('hidden')
+})
+document.querySelector('.transferMoney').addEventListener('click' , function(){
+    document.querySelector('.Transfer').classList.remove('hidden');
+    document.querySelector('.cashOut').classList.add('hidden');
+    document.querySelector('.form').classList.add('hidden');
 })
