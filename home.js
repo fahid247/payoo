@@ -79,14 +79,23 @@ document.querySelector('.cash-Out').addEventListener('click' , function(){
     document.querySelector('.cashOut').classList.remove('hidden');
     document.querySelector('.form').classList.add('hidden');
     document.querySelector('.Transfer').classList.add('hidden');
+    document.querySelector('.getBonus').classList.add('hidden');
 })
 document.querySelector('.add-money').addEventListener('click' , function(){
     document.querySelector('.form').classList.remove('hidden');
     document.querySelector('.cashOut').classList.add('hidden')
     document.querySelector('.Transfer').classList.add('hidden')
+    document.querySelector('.getBonus').classList.add('hidden');
 })
 document.querySelector('.transferMoney').addEventListener('click' , function(){
     document.querySelector('.Transfer').classList.remove('hidden');
     document.querySelector('.cashOut').classList.add('hidden');
     document.querySelector('.form').classList.add('hidden');
+    document.querySelector('.getBonus').classList.add('hidden');
+})
+document.querySelector('.get-bonus').addEventListener('click' , function(){
+    document.querySelector('.getBonus').classList.remove('hidden');
+    document.querySelector('.form').classList.add('hidden');
+    document.querySelector('.cashOut').classList.add('hidden')
+    document.querySelector('.Transfer').classList.add('hidden')
 })
