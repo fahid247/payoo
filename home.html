@@ -24,21 +24,28 @@
         class="flex justify-between items-center max-w-[450px] h-[84px] mx-auto p-5 border-b border-[rgba(8,8,8,0.1)]"
       >
         <div class="left flex">
-          <img class="max-[400px]:w-[41px] max-[400px]:h-[38px] w-[45px] h-[42px]" src="assets/Group.png" alt="" />
+          <img
+            class="max-[400px]:w-[41px] max-[400px]:h-[38px] w-[45px] h-[42px]"
+            src="assets/Group.png"
+            alt=""
+          />
           <div class="text">
-            <h1 class="outfit font-extrabold text-lg">$<span id="balance">45000</span></h1>
+            <h1 class="outfit font-extrabold text-lg">
+              $<span id="balance">45000</span>
+            </h1>
             <p class="outfit font-normal text-[rgba(8,8,8,0.5)] text-sm">
               Balance Available
             </p>
           </div>
         </div>
         <button
-          class="flex justify-center items-center cursor-pointer border-[rgba(8,8,8,0.1)] border-[1px] w-[102px] h-[38px] rounded-lg outfit font-normal text-[rgba(8,8,8,0.5)] text-sm" id="log-out-btn"
+          class="flex justify-center items-center cursor-pointer border-[rgba(8,8,8,0.1)] border-[1px] w-[102px] h-[38px] rounded-lg outfit font-normal text-[rgba(8,8,8,0.5)] text-sm"
+          id="log-out-btn"
         >
           <img
             class="max-[400px]:w-[17px] max-[400px]:h-[17px] w-[20px] h-[20px] mr-0.5"
             src="assets/icons8-logout-48.png"
-            alt="" 
+            alt=""
           />
           Log Out
         </button>
@@ -52,7 +59,9 @@
             is low and
           </p>
         </div>
-        <div class="cards max-w-[402px] h-[197px] grid grid-cols-3 gap-4 mx-2.5">
+        <div
+          class="cards max-w-[402px] h-[197px] grid grid-cols-3 gap-4 mx-2.5"
+        >
           <div
             class="add-money card1 cursor-pointer max-[400px]:w-[109px] max-[400px]:h-[76px] max-w-[130px] h-[90px] rounded-[12px] border border-[rgba(8,8,8,0.1)] flex flex-col justify-center items-center"
           >
@@ -86,7 +95,7 @@
             </h1>
           </div>
           <div
-            class="card5 cursor-pointer max-[400px]:w-[109px] max-[400px]:h-[76px] max-w-[130px] h-[90px] rounded-[12px] border border-[rgba(8,8,8,0.1)] flex flex-col justify-center items-center"
+            class="pay-bill card5 cursor-pointer max-[400px]:w-[109px] max-[400px]:h-[76px] max-w-[130px] h-[90px] rounded-[12px] border border-[rgba(8,8,8,0.1)] flex flex-col justify-center items-center"
           >
             <img class="w-6 h-6" src="assets/purse1.png" alt="" />
             <h1 class="text-[rgba(8,8,8,0.7)] outfit font-normal text-sm">
@@ -94,9 +103,13 @@
             </h1>
           </div>
           <div
-            class="card6 cursor-pointer max-[400px]:w-[109px] max-[400px]:h-[76px] max-w-[130px] h-[90px] rounded-[12px] border border-[rgba(8,8,8,0.1)] flex flex-col justify-center items-center"
+            class="transaction-btn card6 cursor-pointer max-[400px]:w-[109px] max-[400px]:h-[76px] max-w-[130px] h-[90px] rounded-[12px] border border-[rgba(8,8,8,0.1)] flex flex-col justify-center items-center"
           >
-            <img class="max-[400px]:w-[20px] max-[400px]:h-[20px] w-6 h-6" src="assets/transaction1.png" alt="" />
+            <img
+              class="max-[400px]:w-[20px] max-[400px]:h-[20px] w-6 h-6"
+              src="assets/transaction1.png"
+              alt=""
+            />
             <h1 class="text-[rgba(8,8,8,0.7)] outfit font-normal text-sm">
               Transictions
             </h1>
@@ -169,157 +182,263 @@
             />
           </div>
           <button
-            class="w-[99%] cursor-pointer h-[53px] mt-1.5 bg-[rgba(8,116,242,1)] text-white rounded-4xl font-semibold text-xl outfit" id="add-money-btn"
+            class="w-[99%] cursor-pointer h-[53px] mt-1.5 bg-[rgba(8,116,242,1)] text-white rounded-4xl font-semibold text-xl outfit"
+            id="add-money-btn"
           >
             Add Money
           </button>
         </form>
       </div>
     </div>
-    <div class="cashOut hidden ">
-        <div class="form max-w-[402px] mx-auto h-[440px] p-5">
-      <h1 class="outfit font-semibold text-lg text-[rgba(8,8,8,0.9)] mb-4 mt-8">
-        Cash Out
-      </h1>
-      <div
-        class="bg-white flex justify-center items-center w-[100%] h-[401px] rounded-3xl"
-      >
-        <form class="w-[88.5%] flex flex-col gap-4">
-          <div class="input2 flex flex-col">
-            <label
-              class="outfit font-medium text-[1rem] text-[rgba(8,8,8,0.7)]"
-              for="agentNumber"
-              >Agent number</label
+    <div class="cashOut hidden">
+      <div class="form max-w-[402px] mx-auto h-[440px] p-5">
+        <h1
+          class="outfit font-semibold text-lg text-[rgba(8,8,8,0.9)] mb-4 mt-8"
+        >
+          Cash Out
+        </h1>
+        <div
+          class="bg-white flex justify-center items-center w-[100%] h-[401px] rounded-3xl"
+        >
+          <form class="w-[88.5%] flex flex-col gap-4">
+            <div class="input2 flex flex-col">
+              <label
+                class="outfit font-medium text-[1rem] text-[rgba(8,8,8,0.7)]"
+                for="agentNumber"
+                >Agent number</label
+              >
+              <input
+                class="h-[52px] mt-3 bg-[rgba(244,245,247,1)] rounded-4xl border-none p-5 outfit font-light text-[1rem]"
+                placeholder="Enter 11 digit number"
+                type="text"
+                id="agentNumber"
+              />
+            </div>
+            <div class="input3 flex flex-col">
+              <label
+                class="outfit font-medium text-[1rem] text-[rgba(8,8,8,0.7)]"
+                for="amount"
+                >Amount
+              </label>
+              <input
+                class="h-[52px] mt-3 bg-[rgba(244,245,247,1)] rounded-4xl border-none p-5 outfit font-light text-[1rem]"
+                placeholder="Add Amount to Withdraw"
+                type="number"
+                id="amount"
+              />
+            </div>
+            <div class="input4 flex flex-col">
+              <label
+                class="outfit font-medium text-[1rem] text-[rgba(8,8,8,0.7)]"
+                for="pinNumber2"
+                >Pin Number</label
+              >
+              <input
+                class="h-[52px] mt-3 bg-[rgba(244,245,247,1)] rounded-4xl border-none p-5 outfit font-light text-[1rem]"
+                placeholder="Enter 4 digit pin Number"
+                type="text"
+                id="pinNumber2"
+              />
+            </div>
+            <button
+              class="w-[99%] cursor-pointer h-[53px] mt-1.5 bg-[rgba(8,116,242,1)] text-white rounded-4xl font-semibold text-xl outfit"
+              id="withdraw-money-btn"
             >
-            <input
-              class="h-[52px] mt-3 bg-[rgba(244,245,247,1)] rounded-4xl border-none p-5 outfit font-light text-[1rem]"
-              placeholder="Enter 11 digit number"
-              type="text"
-              id="agentNumber"
-            />
-          </div>
-          <div class="input3 flex flex-col">
-            <label
-              class="outfit font-medium text-[1rem] text-[rgba(8,8,8,0.7)]"
-              for="amount"
-              >Amount
-            </label>
-            <input
-              class="h-[52px] mt-3 bg-[rgba(244,245,247,1)] rounded-4xl border-none p-5 outfit font-light text-[1rem]"
-              placeholder="Add Amount to Withdraw"
-              type="number"
-              id="amount"
-            />
-          </div>
-          <div class="input4 flex flex-col">
-            <label
-              class="outfit font-medium text-[1rem] text-[rgba(8,8,8,0.7)]"
-              for="pinNumber2"
-              >Pin Number</label
-            >
-            <input
-              class="h-[52px] mt-3 bg-[rgba(244,245,247,1)] rounded-4xl border-none p-5 outfit font-light text-[1rem]"
-              placeholder="Enter 4 digit pin Number"
-              type="text"
-              id="pinNumber2"
-            />
-          </div>
-          <button
-            class="w-[99%] cursor-pointer h-[53px] mt-1.5 bg-[rgba(8,116,242,1)] text-white rounded-4xl font-semibold text-xl outfit" id="withdraw-money-btn"
-          >
-            Withdraw Money
-          </button>
-        </form>
+              Withdraw Money
+            </button>
+          </form>
+        </div>
       </div>
-    </div>
     </div>
     <div class="Transfer hidden">
-        <div class="form max-w-[402px] mx-auto h-[440px] p-5">
-      <h1 class="outfit font-semibold text-lg text-[rgba(8,8,8,0.9)] mb-4 mt-8">
-        Transfer Money
-      </h1>
-      <div
-        class="bg-white flex justify-center items-center w-[100%] h-[401px] rounded-3xl"
-      >
-        <form class="w-[88.5%] flex flex-col gap-4">
-          <div class="input2 flex flex-col">
-            <label
-              class="outfit font-medium text-[1rem] text-[rgba(8,8,8,0.7)]"
-              for="userAccountNumber"
-              >User Account number</label
+      <div class="form max-w-[402px] mx-auto h-[440px] p-5">
+        <h1
+          class="outfit font-semibold text-lg text-[rgba(8,8,8,0.9)] mb-4 mt-8"
+        >
+          Transfer Money
+        </h1>
+        <div
+          class="bg-white flex justify-center items-center w-[100%] h-[401px] rounded-3xl"
+        >
+          <form class="w-[88.5%] flex flex-col gap-4">
+            <div class="input2 flex flex-col">
+              <label
+                class="outfit font-medium text-[1rem] text-[rgba(8,8,8,0.7)]"
+                for="userAccountNumber"
+                >User Account number</label
+              >
+              <input
+                class="h-[52px] mt-3 bg-[rgba(244,245,247,1)] rounded-4xl border-none p-5 outfit font-light text-[1rem]"
+                placeholder="Enter 11 digit number"
+                type="text"
+                id="userAccountNumber"
+              />
+            </div>
+            <div class="input3 flex flex-col">
+              <label
+                class="outfit font-medium text-[1rem] text-[rgba(8,8,8,0.7)]"
+                for="amount2"
+                >Amount
+              </label>
+              <input
+                class="h-[52px] mt-3 bg-[rgba(244,245,247,1)] rounded-4xl border-none p-5 outfit font-light text-[1rem]"
+                placeholder="Add Amount to Transfer"
+                type="number"
+                id="amount2"
+              />
+            </div>
+            <div class="input4 flex flex-col">
+              <label
+                class="outfit font-medium text-[1rem] text-[rgba(8,8,8,0.7)]"
+                for="pinNumber3"
+                >Pin Number</label
+              >
+              <input
+                class="h-[52px] mt-3 bg-[rgba(244,245,247,1)] rounded-4xl border-none p-5 outfit font-light text-[1rem]"
+                placeholder="Enter 4 digit pin Number"
+                type="text"
+                id="pinNumber3"
+              />
+            </div>
+            <button
+              class="w-[99%] cursor-pointer h-[53px] mt-1.5 bg-[rgba(8,116,242,1)] text-white rounded-4xl font-semibold text-xl outfit"
+              id="send-money-btn"
             >
-            <input
-              class="h-[52px] mt-3 bg-[rgba(244,245,247,1)] rounded-4xl border-none p-5 outfit font-light text-[1rem]"
-              placeholder="Enter 11 digit number"
-              type="text"
-              id="userAccountNumber"
-            />
-          </div>
-          <div class="input3 flex flex-col">
-            <label
-              class="outfit font-medium text-[1rem] text-[rgba(8,8,8,0.7)]"
-              for="amount2"
-              >Amount
-            </label>
-            <input
-              class="h-[52px] mt-3 bg-[rgba(244,245,247,1)] rounded-4xl border-none p-5 outfit font-light text-[1rem]"
-              placeholder="Add Amount to Transfer"
-              type="number"
-              id="amount2"
-            />
-          </div>
-          <div class="input4 flex flex-col">
-            <label
-              class="outfit font-medium text-[1rem] text-[rgba(8,8,8,0.7)]"
-              for="pinNumber3"
-              >Pin Number</label
-            >
-            <input
-              class="h-[52px] mt-3 bg-[rgba(244,245,247,1)] rounded-4xl border-none p-5 outfit font-light text-[1rem]"
-              placeholder="Enter 4 digit pin Number"
-              type="text"
-              id="pinNumber3"
-            />
-          </div>
-          <button
-            class="w-[99%] cursor-pointer h-[53px] mt-1.5 bg-[rgba(8,116,242,1)] text-white rounded-4xl font-semibold text-xl outfit" id="send-money-btn"
-          >
-            Send Now
-          </button>
-        </form>
+              Send Now
+            </button>
+          </form>
+        </div>
       </div>
-    </div>
     </div>
     <div class="getBonus hidden">
       <div class="form max-w-[402px] h-[240px] mx-auto p-5">
-      <h1 class="outfit font-semibold text-lg text-[rgba(8,8,8,0.9)] mb-4 mt-8">
-        Get Bonus
-      </h1>
-      <div
-        class="bg-white flex justify-center items-center w-[100%] h-[201px] rounded-3xl"
-      >
-        <form class="w-[88.5%] flex flex-col gap-4">
-          <div class="input3 flex flex-col">
-            <label
-              class="outfit font-medium text-[1rem] text-[rgba(8,8,8,0.7)]"
-              for="coupon"
-              >Enter Bonus Coupon
-            </label>
-            <input
-              class="h-[52px] mt-3 bg-[rgba(244,245,247,1)] rounded-4xl border-none p-5 outfit font-light text-[1rem]"
-              placeholder="Enter your coupon"
-              type="number"
-              id="coupon"
-            />
-          </div>
-          <button
-            class="w-[99%] cursor-pointer h-[53px] mt-1.5 bg-[rgba(8,116,242,1)] text-white rounded-4xl font-semibold text-xl outfit" id="bonus-btn"
-          >
-            Get Bonus
-          </button>
-        </form>
+        <h1
+          class="outfit font-semibold text-lg text-[rgba(8,8,8,0.9)] mb-4 mt-8"
+        >
+          Get Bonus
+        </h1>
+        <div
+          class="bg-white flex justify-center items-center w-[100%] h-[201px] rounded-3xl"
+        >
+          <form class="w-[88.5%] flex flex-col gap-4">
+            <div class="input3 flex flex-col">
+              <label
+                class="outfit font-medium text-[1rem] text-[rgba(8,8,8,0.7)]"
+                for="coupon"
+                >Enter Bonus Coupon
+              </label>
+              <input
+                class="h-[52px] mt-3 bg-[rgba(244,245,247,1)] rounded-4xl border-none p-5 outfit font-light text-[1rem]"
+                placeholder="Enter your coupon"
+                type="number"
+                id="coupon"
+              />
+            </div>
+            <button
+              class="w-[99%] cursor-pointer h-[53px] mt-1.5 bg-[rgba(8,116,242,1)] text-white rounded-4xl font-semibold text-xl outfit"
+              id="bonus-btn"
+            >
+              Get Bonus
+            </button>
+          </form>
+        </div>
       </div>
     </div>
+    <div class="payBill hidden">
+      <div class="form max-w-[402px] h-[540px] mx-auto p-5">
+        <h1
+          class="outfit font-semibold text-lg text-[rgba(8,8,8,0.9)] mb-4 mt-8"
+        >
+          Pay Bill
+        </h1>
+        <div
+          class="bg-white flex justify-center items-center w-[100%] h-[501px] rounded-3xl"
+        >
+          <form class="w-[88.5%] flex flex-col gap-4">
+            <div class="input1 w-[100%] flex flex-col">
+              <label
+                class="outfit font-medium text-[1rem] text-[rgba(8,8,8,0.7)]"
+                for="bank"
+                >Select to pay</label
+              >
+              <select
+                class="w-[99%] h-[52px] mt-3 bg-[rgba(244,245,247,1)] rounded-4xl border-none text-[rgba(8,8,8,0.5)] pl-5 outfit font-light text-[1rem]"
+                name="bank2"
+                id="bank2"
+              >
+                <option value="">Slect Bank</option>
+                <option value="">USB Bank</option>
+                <option value="">Islamic Bank</option>
+                <option value="">Brac Bank</option>
+                <option value="">Sonali Bank</option>
+              </select>
+            </div>
+            <div class="input2 flex flex-col">
+              <label
+                class="outfit font-medium text-[1rem] text-[rgba(8,8,8,0.7)]"
+                for="billerAccountNumber"
+                >Biller Account Number</label
+              >
+              <input
+                class="h-[52px] mt-3 bg-[rgba(244,245,247,1)] rounded-4xl border-none p-5 outfit font-light text-[1rem]"
+                placeholder="Enter 11 digit account number"
+                type="text"
+                id="billerAccountNumber"
+              />
+            </div>
+            <div class="input3 flex flex-col">
+              <label
+                class="outfit font-medium text-[1rem] text-[rgba(8,8,8,0.7)]"
+                for="amountPay"
+                >Amount to pay
+              </label>
+              <input
+                class="h-[52px] mt-3 bg-[rgba(244,245,247,1)] rounded-4xl border-none p-5 outfit font-light text-[1rem]"
+                placeholder="Add Amount to Wallet"
+                type="number"
+                id="amountPay"
+              />
+            </div>
+            <div class="input4 flex flex-col">
+              <label
+                class="outfit font-medium text-[1rem] text-[rgba(8,8,8,0.7)]"
+                for="pinNumber4"
+                >Pin Number</label
+              >
+              <input
+                class="h-[52px] mt-3 bg-[rgba(244,245,247,1)] rounded-4xl border-none p-5 outfit font-light text-[1rem]"
+                placeholder="Enter 4 digit pin"
+                type="text"
+                id="pinNumber4"
+              />
+            </div>
+            <button
+              class="w-[99%] cursor-pointer h-[53px] mt-1.5 bg-[rgba(8,116,242,1)] text-white rounded-4xl font-semibold text-xl outfit"
+              id="add-money-btn"
+            >
+              Pay Now
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="transaction hidden max-w-[402px] h-[540px] mx-auto p-5">
+      <div class="flex justify-between items-center">
+          <h1
+            class="outfit font-semibold text-lg text-[rgba(8,8,8,0.9)] mb-4 mt-8"
+          >
+            Transction History
+          </h1>
+          <p
+            class="outfit font-medium text-[14px] text-[rgba(8,8,8,0.5)] mb-4 mt-8"
+          >
+            View All
+          </p>
+        </div>
+      <div class="transaction-form ">
+        
+        
+      </div>
     </div>
     <div class="mt-32 h-1 w-8"></div>
     <script src="home.js"></script>
